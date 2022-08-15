@@ -32,7 +32,6 @@ const Home = () => {
   return (
     <div>
       <CategoryMenu categories={categories} />
-      {/* <Outlet /> */}
     </div>
   );
 };
