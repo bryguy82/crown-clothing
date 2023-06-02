@@ -1,4 +1,4 @@
-import { Fragment, useContext } from "react";
+import React, { Fragment, useContext } from "react";
 import { Outlet } from "react-router-dom";
 import { ReactComponent as CrownLogo } from "../../assets/crown.svg";
 import CartDropdown from "../../components/cart-dropdown/cart-dropdown.component";
@@ -6,12 +6,11 @@ import CartIcon from "../../components/cart-icon/cart-icon.component";
 import { CartContext } from "../../contexts/cart.context";
 import { UserContext } from "../../contexts/user.context";
 import { signOutUser } from "../../utils/firebase/firebase.utils";
-
 import {
   LogoContainer,
-  NavigationContainer,
   NavLink,
   NavLinks,
+  NavigationContainer,
 } from "./navigation.styles";
 
 const Navigation = () => {
